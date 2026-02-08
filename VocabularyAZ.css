@@ -1,0 +1,76 @@
+.vocab-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #36e2d8, #ff5fa2, #5aa9ff);
+  position: relative;
+  font-family: "Comic Sans MS", "Rounded Mplus", sans-serif;
+}
+
+/* ICONS */
+.top-left-icons,
+.top-right-icons {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.top-left-icons { left: 20px; }
+.top-right-icons { right: 20px; }
+
+.top-left-icons img,
+.top-right-icons img {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+/* CARD */
+.vocab-card {
+  width: 88%;
+  max-width: 1200px;
+  margin: 100px auto 0;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 22px;
+  padding: 40px 30px 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* TITLE */
+.vocab-card h1 {
+  text-align: center;
+  font-size: 44px;
+  color: #7a4cc2;
+  margin-bottom: 40px;
+}
+
+/* LETTER GRID */
+.letters-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 22px;
+  justify-items: center;
+}
+
+.letter-btn {
+  width: 82px;
+  height: 82px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.letter-btn:hover {
+  transform: scale(1.08);
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+}
